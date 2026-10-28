@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Swot Analysis of Django vs Flask",
     "section": "",
-    "text": "The Issue"
+    "text": "A sleep and study habits project needs a simple website to recruit student participants. They need a site with a short description of the study, an eligibility screener of about eight questions, and a sign-up form that collects a name and email for people who qualify. Ideally, research assistants could also log in and see a list of sign-ups. Since site will hold contact information,security and privacy matter, and campus IT will want to know how the data is stored. The graduate student has never built a website, and the lab may re-use the website for future studies. The website will not be maintained full time. What would be a better choice to solve this problem: Django or Flask?\nSimple Conclusion: Django would be a better fit."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,19 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html#django",
+    "href": "index.html#django",
+    "title": "Swot Analysis of Django vs Flask",
+    "section": "Django",
+    "text": "Django\n\nStrengths\n\nBuilt in security features protect your website from:\n\nCross-site scripting (XSS) protection\nSQL injection protection\nClickjacking protection\nRead here for more\n\nSanitizes user input by default (Cleans it to remove harmful elements)\n\nWeaknesses\n\nSteep learning curve for a beginner, since it is a full-stack web framework vs. a micro one.\nA bit heavier than what the project requires (it only needs a simple website without much functionality)\n\nOpportunities\nThreats"
+  },
+  {
+    "objectID": "index.html#flask",
+    "href": "index.html#flask",
+    "title": "Swot Analysis of Django vs Flask",
+    "section": "Flask",
+    "text": "Flask\n\nStrengths\n\nEasy learning curve, since it is a micro-web framework\nIdeal for smaller scale projects like these\n\nWeaknesses\n\nNo built in security features, requires extra effort from the developer to protect against things that Django automatically protects against\nAutomatically trusts user input\n\nOpportunities\nThreats"
   }
 ]
