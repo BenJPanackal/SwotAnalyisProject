@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Swot Analysis of Django vs Flask",
     "section": "",
-    "text": "A sleep and study habits project needs a simple website to recruit student participants. They need a site with a short description of the study, an eligibility screener of about eight questions, and a sign-up form that collects a name and email for people who qualify. Ideally, research assistants could also log in and see a list of sign-ups. Since site will hold contact information,security and privacy matter, and campus IT will want to know how the data is stored. The graduate student has never built a website, and the lab may re-use the website for future studies. The website will not be maintained full time. What would be a better choice to solve this problem: Django or Flask?\nSimple Conclusion: Django would be a better fit."
+    "text": "A sleep and study habits project needs a simple website to recruit student participants. They need a site with a short description of the study, an eligibility screener of about eight questions, and a sign-up form that collects a name and email for people who qualify. Ideally, research assistants could also log in and see a list of sign-ups. Since site will hold contact information, security and privacy matter, campus IT will want to know how the data is stored. The graduate student has never built a website, and the lab may re-use the website for future studies. The website will not be maintained full time. What would be a better choice to solve this problem: Django or Flask?\nSimple Conclusion: Django would be a better fit because using Flask without much experience is more likely to have security risks than Django."
   },
   {
     "objectID": "about.html",
@@ -18,13 +18,13 @@
     "href": "index.html#django",
     "title": "Swot Analysis of Django vs Flask",
     "section": "Django",
-    "text": "Django\n\nStrengths\n\nBuilt in security features protect your website from:\n\nCross-site scripting (XSS) protection\nSQL injection protection\nClickjacking protection\nRead here for more\n\nSanitizes user input by default (Cleans it to remove harmful elements)\n\nWeaknesses\n\nSteep learning curve for a beginner, since it is a full-stack web framework vs. a micro one.\nA bit heavier than what the project requires (it only needs a simple website without much functionality)\n\nOpportunities\nThreats"
+    "text": "Django\n\nStrengths\n\nBuilt in security features protect your website from:\n\nCross-site scripting (XSS) protection\nSQL injection protection\nClickjacking protection\nRead here for more\n\nSanitizes user input by default (Cleans it to remove harmful elements)\nHas built in databse management\n\nWeaknesses\n\nSteep learning curve for a beginner, since it is a full-stack web framework vs. a micro one\nA bit heavier than what the project requires (it only needs a simple website)\n\nOpportunities\n\nSince Django is a full web-framework, the lab could build upon this website. for other surveys\nMore boiler-plate, but requires less code than Flask if it scales project if they need patient data for another survey.\n\nThreats\n\nWebsite may require updates, or security features could go out of date"
   },
   {
     "objectID": "index.html#flask",
     "href": "index.html#flask",
     "title": "Swot Analysis of Django vs Flask",
     "section": "Flask",
-    "text": "Flask\n\nStrengths\n\nEasy learning curve, since it is a micro-web framework\nIdeal for smaller scale projects like these\n\nWeaknesses\n\nNo built in security features, requires extra effort from the developer to protect against things that Django automatically protects against\nAutomatically trusts user input\n\nOpportunities\nThreats"
+    "text": "Flask\n\nStrengths\n\nEasy learning curve, since it is a micro-web framework\nIdeal for smaller scale projects like these\nA lot of freedom (relies on developer’s skills)\n\nWeaknesses\n\nNo built in security features, requires extra effort from the developer to protect against things that Django protects against automatically\nNo built in user management, forcing the inexperienced web developer to rely on external libraries.\nA lot of freedom (relies on developer’s skill)\nDoes not have built in database management (Requires external libraries)\nDoes not sanitize user input unless done manually.\n\nOpportunities\n\nAs long as scope stays small, Flask will be easier for another team to understand if the project is handed off\n\nThreats\n\nBad actors could steal data if the developer doesn’t manually put safety precautions.\nCode re-use could be harder if the application grows."
   }
 ]

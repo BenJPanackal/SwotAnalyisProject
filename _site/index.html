@@ -168,8 +168,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>A sleep and study habits project needs a simple website to recruit student participants. They need a site with a short description of the study, an eligibility screener of about eight questions, and a sign-up form that collects a name and email for people who qualify. Ideally, research assistants could also log in and see a list of sign-ups. Since site will hold contact information,security and privacy matter, and campus IT will want to know how the data is stored. The graduate student has never built a website, and the lab may re-use the website for future studies. The website will not be maintained full time. What would be a better choice to solve this problem: Django or Flask?</p>
-<p><strong>Simple Conclusion:</strong> Django would be a better fit.</p>
+<p>A sleep and study habits project needs a simple website to recruit student participants. They need a site with a short description of the study, an eligibility screener of about eight questions, and a sign-up form that collects a name and email for people who qualify. Ideally, research assistants could also log in and see a list of sign-ups. Since site will hold contact information, security and privacy matter, campus IT will want to know how the data is stored. The graduate student has never built a website, and the lab may re-use the website for future studies. The website will not be maintained full time. What would be a better choice to solve this problem: Django or Flask?</p>
+<p><strong>Simple Conclusion:</strong> Django would be a better fit because using Flask without much experience is more likely to have security risks than Django.</p>
 </section>
 <section id="swot-analysis" class="level1">
 <h1>Swot Analysis</h1>
@@ -186,14 +186,22 @@ ul.task-list li input[type="checkbox"] {
 <li>Read <a href="https://docs.djangoproject.com/en/6.1/topics/security/">here</a> for more</li>
 </ul></li>
 <li>Sanitizes user input by default (Cleans it to remove harmful elements)</li>
+<li>Has built in databse management</li>
 </ul></li>
 <li>Weaknesses
 <ul>
-<li>Steep learning curve for a beginner, since it is a full-stack web framework vs.&nbsp;a micro one.</li>
-<li>A bit heavier than what the project requires (it only needs a simple website without much functionality)</li>
+<li>Steep learning curve for a beginner, since it is a full-stack web framework vs.&nbsp;a micro one</li>
+<li>A bit heavier than what the project requires (it only needs a simple website)</li>
 </ul></li>
-<li>Opportunities</li>
-<li>Threats</li>
+<li>Opportunities
+<ul>
+<li>Since Django is a full web-framework, the lab could build upon this website. for other surveys</li>
+<li>More boiler-plate, but requires less code than Flask if it scales project if they need patient data for another survey.</li>
+</ul></li>
+<li>Threats
+<ul>
+<li>Website may require updates, or security features could go out of date</li>
+</ul></li>
 </ul>
 </section>
 <section id="flask" class="level2">
@@ -203,20 +211,31 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Easy learning curve, since it is a micro-web framework</li>
 <li>Ideal for smaller scale projects like these</li>
+<li>A lot of freedom (relies on developer’s skills)</li>
 </ul></li>
 <li>Weaknesses
 <ul>
-<li>No built in security features, requires extra effort from the developer to protect against things that Django automatically protects against</li>
-<li>Automatically trusts user input</li>
+<li>No built in security features, requires extra effort from the developer to protect against things that Django protects against automatically</li>
+<li>No built in user management, forcing the inexperienced web developer to rely on external libraries.</li>
+<li>A lot of freedom (relies on developer’s skill)</li>
+<li>Does not have built in database management (Requires external libraries)</li>
+<li>Does not sanitize user input unless done manually.</li>
 </ul></li>
-<li>Opportunities</li>
-<li>Threats</li>
+<li>Opportunities
+<ul>
+<li>As long as scope stays small, Flask will be easier for another team to understand if the project is handed off</li>
+</ul></li>
+<li>Threats
+<ul>
+<li>Bad actors could steal data if the developer doesn’t manually put safety precautions.</li>
+<li>Code re-use could be harder if the application grows.</li>
+</ul></li>
 </ul>
 </section>
 </section>
 <section id="recommendation" class="level1">
 <h1>Recommendation</h1>
-<p><strong>Django</strong> is the better choice. It would pose a steeper learning curve and be a more comprehensive framwork then the project needs, but it is overall the safer option. Due to the graduate student’s lack of experience with web development, there could be potential security risks and slight oversights made due to inexperience. Django has built in security features as opposed to Flask, which overall makes it the safer choice.</p>
+<p><strong>Django</strong> is the better choice. It would pose a steeper learning curve and be a more comprehensive framwork then the project needs, but it is overall the best option. Due to the graduate student’s lack of experience with web development, there could be potential security risks if they choose to use Flask. Django may be harder to learn at first, but because it handles so many things for the developer like database management, user management, and security, it the better choice for the inexperienced graduate student. The logic here is that it is better for the graduate student to learn a more difficult framework that handles these problems than learn the simple framework and have to manually handle each them. If the graduate student was experienced with both of the technologies, then I would recommend Flask due to the small scale of the application, but for in this context Django is better.</p>
 </section>
 <section id="citations" class="level1">
 <h1>Citations</h1>
@@ -224,6 +243,7 @@ ul.task-list li input[type="checkbox"] {
 <li>GeeksforGeeks (2025) Differences between Django vs flask, GeeksforGeeks. Available at: https://www.geeksforgeeks.org/python/differences-between-django-vs-flask/ (Accessed: 28 October 2026).</li>
 <li>Security in Django | Django documentation. (n.d.). Django Project. https://docs.djangoproject.com/en/6.1/topics/security/</li>
 <li>Corgea. (2026, August 28). Flask Security Best Practices 2026 | Corgea. Corgea. https://corgea.com/learn/flask-security-best-practices-2025</li>
+<li>Vincent, W. (2026, June 10). Flask vs Django in 2026: A Comprehensive Comparison of Python Web Frameworks. LearnDjango. https://learndjango.com/tutorials/flask-vs-django</li>
 </ul>
 
 
